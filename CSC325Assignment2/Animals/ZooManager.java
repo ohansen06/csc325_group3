@@ -1,4 +1,4 @@
-package Animals;
+package CSC325Assignment2.Animals;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;

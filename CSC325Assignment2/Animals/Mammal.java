@@ -1,7 +1,7 @@
 
-package Animals;
-import Interfaces.Swimable;
-import Interfaces.Walkable;
+package CSC325Assignment2.Animals;
+import CSC325Assignment2.Interfaces.Swimable;
+import CSC325Assignment2.Interfaces.Walkable;
 /**
  * Mammal class that extends Animal and implements walkable and swimable interfaces
  */

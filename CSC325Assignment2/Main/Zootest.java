@@ -1,11 +1,12 @@
-package Main;
-import Animals.Animal;
-import Animals.Bird;
-import Animals.Fish;
-import Animals.Mammal;
-import Animals.ZooManager;
-import Interfaces.Swimable;
-import Interfaces.Walkable;
+package CSC325Assignment2.Main;
+import CSC325Assignment2.Animals.Animal;
+import CSC325Assignment2.Animals.Bird;
+import CSC325Assignment2.Animals.Fish;
+import CSC325Assignment2.Animals.Mammal;
+import CSC325Assignment2.Animals.ZooManager;
+import CSC325Assignment2.Interfaces.Swimable;
+import CSC325Assignment2.Interfaces.Walkable;
+
 import java.util.ArrayList;
 /**
  * Main class to test the ZooManager and animal classes.

@@ -1,5 +1,5 @@
 
-package Interfaces;
+package CSC325Assignment2.Interfaces;
 /**
  * Swimmable interface for animals that can swim 
  */

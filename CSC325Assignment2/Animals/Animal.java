@@ -1,5 +1,5 @@
 
-package Animals;
+package CSC325Assignment2.Animals;
 /**
  * Base class for all animals in the zoo.
  */

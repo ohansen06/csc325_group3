@@ -1,5 +1,5 @@
 
-package Interfaces;
+package CSC325Assignment2.Interfaces;
 /**
  * Walkable interface for animals that can walk
  */

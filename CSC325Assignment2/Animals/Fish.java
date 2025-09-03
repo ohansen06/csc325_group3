@@ -1,6 +1,6 @@
 
-package Animals;
-import Interfaces.Swimable;
+package CSC325Assignment2.Animals;
+import CSC325Assignment2.Interfaces.Swimable;
 /**
  * Fish class that extends Animal and implements swimable
  */
