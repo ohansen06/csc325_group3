@@ -14,7 +14,7 @@ static Scanner scn = new Scanner(System.in);
 /**
  * Lists all animals in the collection. If the collection is empty, prompts the user to add animals.
  */
-public static void listAll() {
+static void listAll() {
 
    if (collection.isEmpty()) {
          System.out.println("Please add animals to collection and try again.");
@@ -27,7 +27,7 @@ public static void listAll() {
 /**
  * Prompts user to add an animal, asks for species and category (mammal, bird, or fish), and adds the animal to the collection.
  */
-public static void addAnimal() {
+static void addAnimal() {
      System.out.println("Enter Animal Species: ");
         String species = scn.next();
         System.out.println("Is it a Mammal, Bird, or Fish?");
@@ -75,7 +75,7 @@ static void removeAnimal() {
 /**
  * Iterates through the collection and calls the move method on each animal.
  */
-public static void makeAllMove() {
+ static void makeAllMove() {
     for(Animal a : collection) {
         a.move();
     }
@@ -84,7 +84,7 @@ public static void makeAllMove() {
 /**
  * Iterates through the collection and calls the makeSound method on each animal.
  */
-public static void makeAnimalBand() {
+static void makeAnimalBand() {
     for(Animal a : collection){
         a.makeSound();
     }

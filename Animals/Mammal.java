@@ -1,10 +1,11 @@
 
 package Animals;
-import Interfaces.Sittable;
+import Interfaces.Swimable;
+import Interfaces.Walkable;
 /**
- * Mammal class that extends Animal and implements Sittable interface.
+ * Mammal class that extends Animal and implements walkable and swimable interfaces
  */
-public class Mammal extends Animal implements Sittable {
+public class Mammal extends Animal implements Walkable, Swimable {
 
     /**
      * Constructs a Mammal with the given species.
@@ -40,18 +41,35 @@ public class Mammal extends Animal implements Sittable {
     }
 
     /**
-     * Sittable interface method: prints a message indicating the mammal sat down.
+     * Walkable interface method: prints a message indicating the mammal can walk
      */
+    
     @Override
-    public void sitDown() {
-        System.out.println("The " + species + " sat down.");    
+    public void canWalk() {
+        System.out.println("This " + species + " can walk.");
     }
 
     /**
-     * Sittable interface method: prints a message indicating the mammal stood up.
+     * Walkable interface method: prints a message indicating the mammal walked forward.
      */
     @Override
-    public void standUp() {
-        System.out.println("The " + species + " stood up.");
+    public void walk() {
+        System.out.println("The " + species + " walked forward.");
+    }
+
+     /**
+     * Walkable interface method: prints a message indicating the mammal can swim
+     */
+    @Override
+     public void canSwim(){
+        System.out.println("This " + species + " can swim.");
+    }
+
+     /**
+     * Walkable interface method: prints a message indicating the mammal swam deeper
+     */
+    @Override
+    public void diveDown() {
+        System.out.println("The " + species + " swam deeper.");
     }
 }

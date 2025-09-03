@@ -4,8 +4,8 @@ import Animals.Bird;
 import Animals.Fish;
 import Animals.Mammal;
 import Animals.ZooManager;
-import Interfaces.Flyable;
-import Interfaces.Sittable;
+import Interfaces.Swimable;
+import Interfaces.Walkable;
 import java.util.ArrayList;
 /**
  * Main class to test the ZooManager and animal classes.
@@ -22,7 +22,7 @@ public class Zootest {
 
         //example of usage of polymorphism and interfaces
         ArrayList<Animal> animals = new ArrayList<>();
-        animals.add(new Bird("Blue Jay"));
+        animals.add(new Bird("Duck"));
         animals.add(new Fish("Goldfish"));
         animals.add(new Mammal("Raccoon"));
 
@@ -31,15 +31,17 @@ public class Zootest {
         System.out.println("Species: " + a.toString());
         a.move();
         a.makeSound();
-        if (a instanceof Flyable f) {
-            f.diveDown();
-            f.flyUp();
-        }
-        if (a instanceof Sittable s) {
-            s.sitDown();
-            s.standUp();
-        }
+       if  (a instanceof Swimable swimable) {
+        swimable.canSwim();    
+        swimable.diveDown();
+               
+       
+       }
+        if  (a instanceof Walkable walkable) {
+        walkable.canWalk();
+        walkable.walk();
     }
 }
+    }
 }
 

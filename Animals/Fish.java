@@ -1,9 +1,10 @@
 
 package Animals;
+import Interfaces.Swimable;
 /**
- * Fish class that extends Animal.
+ * Fish class that extends Animal and implements swimable
  */
-public class Fish extends Animal {
+public class Fish extends Animal implements Swimable {
     
     /**
      * Constructs a Fish with the given species.
@@ -37,4 +38,20 @@ public class Fish extends Animal {
     public String toString() {
         return species;
     }
+
+     /**
+     * Walkable interface method: prints a message indicating the fish can swim
+     */
+    @Override
+     public void canSwim(){
+        System.out.println("This " + species + " can swim.");
+    }
+
+     /**
+     * Walkable interface method: prints a message indicating the fish swam deeper
+     */
+    @Override
+    public void diveDown() {
+        System.out.println("The " + species + " swam deeper.");
+}
 }

@@ -1,10 +1,11 @@
 
 package Animals;
-import Interfaces.Flyable;
+import Interfaces.Swimable;
+import Interfaces.Walkable;
 /**
- * Bird class that extends Animal and implements Flyable interface.
+ * Bird class that extends Animal and implements walkable and swimable interfaces
  */
-public class Bird extends Animal implements Flyable {
+public class Bird extends Animal implements Walkable, Swimable {
 
     /**
      * Constructs a Bird with the given species.
@@ -38,21 +39,40 @@ public class Bird extends Animal implements Flyable {
     public String toString() {
         return species;
     }
+    
+    /**
+     * Walkable interface method: prints a message indicating the bird can walk
+     */
+    @Override
+    public void canWalk() {
+        System.out.println("This " + species + " can walk.");
+    }
+    
 
     /**
-     * Flyable interface method: prints a message indicating the bird dove down.
+     * Walkable interface method: prints a message indicating the bird walked forward.
+     */
+    @Override
+ public void walk() {
+        System.out.println("The " + species + " walked forward.");
+    }
+
+     /**
+     * Walkable interface method: prints a message indicating the bird can swim
+     */
+    @Override
+    public void canSwim(){
+        System.out.println("This " + species + " can swim.");
+    }
+
+     /**
+     * Walkable interface method: prints a message indicating the bird swam deeper
      */
     @Override
     public void diveDown() {
-        System.out.println("The " + species + " dove down.");
-    }     
-
-    /**
-     * Flyable interface method: prints a message indicating the bird flew up.
-     */
-    @Override
-    public void flyUp() {
-        System.out.println("The " + species + " flew up.");
+        System.out.println("The " + species + " swam deeper.");
+   
     }
+    
 }
 

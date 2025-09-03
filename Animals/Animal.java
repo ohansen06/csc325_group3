@@ -4,9 +4,7 @@ package Animals;
  * Base class for all animals in the zoo.
  */
 public abstract class Animal {
-    /**
-     * The species of the animal.
-     */
+    
     protected String species;
 
     /**
