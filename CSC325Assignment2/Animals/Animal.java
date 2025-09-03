@@ -18,14 +18,10 @@ public abstract class Animal {
     /**
      * Default move method, to be overridden by subclasses.
      */
-    public void move(){
-        System.out.println("The " + species + " moved around.");
-    }
+    public abstract void move();
 
     /**
      * Default makeSound method, to be overridden by subclasses.
      */
-    public void makeSound(){
-        System.out.println("The " + species + " made a sound.");
-    }
+    public abstract void makeSound();
 }
