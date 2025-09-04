@@ -1,2 +1,3 @@
 # csc325_group3
 Repository for CSC 325 - Group 3
+This is Ryley Froning's work. I used copilot to explain and fix some of the issues that popped up. The main thing i had it explain was the package ordering. I would like to refaim from using A.I but I found it use full. I had it also look fix sime import errors that I made. I had some issues using it with the A.I no removing the code it was trying to replace. so I ended up doing it by hand after looking at how it was ment to be.
