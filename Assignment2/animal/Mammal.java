@@ -1,7 +1,8 @@
 package Assignment2.animal;
 import Assignment2.interfaces.Swimmable;
-import assignment2.interfaces.Walkable;
+import Assignment2.interfaces.Walkable;
 public class Mammal extends Animal implements Walkable, Swimmable {
+    @SuppressWarnings("FieldMayBeFinal")
     private String species;
 
     public Mammal(String species) {

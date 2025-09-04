@@ -3,17 +3,28 @@ import Animal.Fish;
 import Animal.Mammal;
 Public class Main {
     public static void main(String[] args) {
-        Mammal dog = new Mammal("Dog");
-        //Bird bird = new Bird();
-        //Fish fish = new Fish();
+        Mammal mammal = new Mammal("Dog");
+        Bird bird = new Bird("pigeon");
+        Fish fish = new Fish("Goldfish");
 
-        dog.move();
-        dog.makeSound();
-        dog.walk(); 
-        dog.canWalk();
-        dog.swim();
-        dog.canSwim();
-        //bird.move();
-        //fish.move();
+        mammal.move();
+        mammal.makeSound();
+        mammal.walk(); 
+        mammal.canWalk();
+        mammal.swim();
+        mammal.canSwim();
+        
+        bird.move();
+        bird.makeSound();
+        bird.walk();
+        bird.canWalk();
+        bird.swim();
+        bird.canSwim();
+        bird.fly();
+        
+        fish.move();
+        fish.makeSound();
+        fish.swim();
+        fish.canSwim();
     }
 }
