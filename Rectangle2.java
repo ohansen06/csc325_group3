@@ -1,3 +1,4 @@
+
 public class Rectangle2 implements Drawable, Calculable {
     private String color;
     private String name;
