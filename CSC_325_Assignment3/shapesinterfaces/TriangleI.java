@@ -1,5 +1,5 @@
 package CSC_325_Assignment3.shapesinterfaces;
-
+  
 public class TriangleI
 {
     //properties for TriangleI obj.
