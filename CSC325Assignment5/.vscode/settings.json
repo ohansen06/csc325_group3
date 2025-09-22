@@ -1,0 +1,11 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\javafx-sdk-21\\jdk-24.0.2\\lib"
+    ],
+    "java.configuration.updateBuildConfiguration": "interactive",
+    
+        
+        
+    }
+
