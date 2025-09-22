@@ -1,0 +1,1 @@
+I had issue with geting javafx and maven to work so i am unable to test to see if it works. Maven showed up on my laptop command prompt but it does not show up on vscode. i have the maven extention and i added maven to my system variable and i still cound not get it to work.
